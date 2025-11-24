@@ -1,0 +1,23 @@
+# Core dependencies
+torch>=2.0.0
+torchaudio>=2.0.0
+transformers>=4.30.0
+
+# Text-to-Speech
+gTTS>=2.3.0
+
+# Audio processing and utilities
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Optional: for evaluation metrics (if you want to run tests)
+jiwer>=3.0.0  # For WER calculation
+sklearn>=0.0  # For cosine similarity evaluation
+
+# Optional: for Jupyter notebooks
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+matplotlib>=3.7.0
+
+# Optional: for rhythm modeling (Urhythmic integration)
+# Note: Urhythmic requires additional setup - see documentation
