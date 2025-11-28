@@ -8,7 +8,7 @@ Usage:
 import sys
 sys.path.append('.')
 
-from src import TensorTalkPipeline
+from src.pipeline import TensorTalkPipeline
 
 
 def main():
