@@ -23,29 +23,6 @@ Our system achieves competitive results while reducing training time:
 | PER ↓   | **0.01**              | 0.78          |
 | SECS ↑  | 0.65                  | 0.72          |
 
-### Basic Usage
-
-```python
-from src import TensorTalkPipeline
-
-# Initialize pipeline
-pipeline = TensorTalkPipeline(k=4)
-
-# Synthesize speech in target voice
-text = "Hello, this is a demonstration of voice cloning!"
-target_audio_paths = ["path/to/target/speaker/audio.wav"]
-
-# Generate cloned speech
-audio = pipeline.synthesize(
-    text=text,
-    target_audio_paths=target_audio_paths,
-    alpha=1.0  # 1.0 = full target voice, 0.0 = source voice
-)
-
-# Save the result
-pipeline.save_audio(audio, "output.wav")
-```
-
 See `notebooks/demo.ipynb` for a complete interactive example.
 
 ## Architecture
@@ -113,11 +90,3 @@ This is a research project performed at Boston College. We welcome feedback!
 - Alexander Sharpe (sharpeal@bc.edu)
 
 Boston College, 2024
-
-## License
-
-This project is released for academic and research purposes. Please check individual component licenses:
-
-- WavLM: MIT License
-- HiFi-GAN (via knn-vc): MIT License
-- gTTS: MIT License
