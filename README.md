@@ -23,8 +23,6 @@ Our system achieves competitive results while reducing training time:
 | PER ↓   | **0.01**              | 0.78          |
 | SECS ↑  | 0.65                  | 0.72          |
 
-See `notebooks/demo.ipynb` for a complete interactive example.
-
 ## Architecture
 
 TensorTalk consists of four main components:
